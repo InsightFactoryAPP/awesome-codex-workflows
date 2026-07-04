@@ -1,0 +1,26 @@
+{
+  "name": "KbWen/agentic-os",
+  "url": "https://github.com/KbWen/agentic-os",
+  "summary": "Governance-first workflow framework for Codex and other coding agents, using Work Log-backed phase gates, burden-of-proof reviews, spec-drift checks, and evidence requirements to keep completion claims backed by verifiable implementation evidence.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "governance",
+    "quality-gates",
+    "worklogs",
+    "review"
+  ],
+  "signals": [
+    "codex-agents",
+    "burden-of-proof",
+    "spec-drift",
+    "work-log-evidence",
+    "phase-gates"
+  ],
+  "evidence": [
+    "Ships Codex-specific installer guidance, Codex agent definitions, Codex safety rules, and `/codex-cli` workflow support while keeping Codex a first-class target inside a broader cross-agent framework.",
+    "The review workflow starts acceptance criteria and behavioral claims as unproven, then requires concrete code, test, or output evidence before allowing them to pass.",
+    "Uses Work Log state, gate receipts, Diff Base SHA, spec-drift checks, classification-aware phase gates, and ship checklists to connect delivered artifacts back to requirements, risks, and verification evidence."
+  ],
+  "status": "active"
+}

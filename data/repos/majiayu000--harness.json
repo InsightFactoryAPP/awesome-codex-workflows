@@ -1,0 +1,25 @@
+{
+  "name": "majiayu000/harness",
+  "url": "https://github.com/majiayu000/harness",
+  "summary": "Rust process-control plane for Codex app-server workflows, combining SpecRail route gates, PR readiness gates, human authorization checks, and review gates backed by a required local Codex provider.",
+  "codex_relation": "primary",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "process-control",
+    "rust",
+    "specrail",
+    "review-gates"
+  ],
+  "signals": [
+    "codex-app-server",
+    "process-control",
+    "quality-gates",
+    "review-gates",
+    "human-gates"
+  ],
+  "evidence": [
+    "The example configuration sets Codex as the default and preferred agent, uses Codex as the reviewer, and requires the local codex_cli_review provider for configured review gates.",
+    "Implements a Rust Codex app-server adapter and ships SpecRail workflow artifacts with deterministic route and PR gate scripts that return allowed, warn, needs_human, or blocked from local evidence."
+  ],
+  "status": "active"
+}
