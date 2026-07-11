@@ -1,0 +1,26 @@
+{
+  "name": "ggwhite/4x",
+  "url": "https://github.com/ggwhite/4x",
+  "summary": "Cross-agent Design/Code/Review/Test runtime with first-class Codex support, using per-criterion verification types, executable evidence, and Go-enforced gates.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "multi-role",
+    "quality-gates"
+  ],
+  "signals": [
+    "acceptance-criteria",
+    "executable-evidence",
+    "independent-review",
+    "deterministic-guards",
+    "codex-runner"
+  ],
+  "evidence": [
+    "The workflow separates design, coding, review, testing, deep review, and acceptance into isolated roles while the Go runtime controls phase transitions and artifact boundaries.",
+    "Its test strategy maps acceptance-criterion IDs to verification types and optional executable `ac_checks`; the verifier records command exit codes and evidence per criterion.",
+    "Go guards recompute `ac_checks` results from recorded commands and exit codes, reject skipped or inconsistent checks, require evidence for non-skipped criteria, and enforce screenshot and manual-check obligations when configured.",
+    "The verifier rejects obvious fake checks such as empty commands, no-op commands, echo-only commands, and source-only grep checks, while the Codex adapter can run every workflow role through `codex exec --json`."
+  ],
+  "status": "active"
+}
