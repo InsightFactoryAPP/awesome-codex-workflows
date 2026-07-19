@@ -1,0 +1,26 @@
+{
+  "name": "govctl-org/govctl",
+  "url": "https://github.com/govctl-org/govctl",
+  "summary": "Repository-native governance workflow for Codex that links RFC requirements and ADR decisions to acceptance-criteria work items, enforcing lifecycle rules and executable verification guards before completion.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "governance",
+    "rfc",
+    "adr",
+    "work-items"
+  ],
+  "signals": [
+    "codex-skills",
+    "durable-state",
+    "decision-records",
+    "quality-gates",
+    "verification-guards"
+  ],
+  "evidence": [
+    "Provides a documented global Codex installation path that generates govctl-managed skills and agents under `.codex`, including governed discussion, implementation, migration, review, and commit workflows.",
+    "Separates normative RFC obligations, ADR trade-offs and rejected alternatives, and Work Item scope and acceptance criteria into durable repository artifacts with an explicit authority hierarchy.",
+    "Seals normative RFC versions before implementation and rejects Work Item completion until acceptance criteria are resolved and all effective verification guards pass or have explicit reasoned waivers."
+  ],
+  "status": "active"
+}
