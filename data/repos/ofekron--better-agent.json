@@ -1,0 +1,25 @@
+{
+  "name": "ofekron/better-agent",
+  "url": "https://github.com/ofekron/better-agent",
+  "summary": "Local, inspectable workspace for persistent Codex, Claude, and Gemini coding-agent workflows, with session orchestration, delegation, forks, and an integration SDK.",
+  "codex_relation": "primary",
+  "category": "Workflow Infrastructure & Design",
+  "tags": [
+    "workspace",
+    "sessions",
+    "sdk"
+  ],
+  "signals": [
+    "detached-runners",
+    "crash-recovery",
+    "cross-session-delegation",
+    "forks",
+    "integration-sdk"
+  ],
+  "evidence": [
+    "Implements a dedicated Codex app-server provider and detached runner with session resume, fork, steering, sub-session, and delegation support.",
+    "Persists Codex rollout cursors and replays native rollout JSONL after backend restarts, with regression tests covering live-run reattachment and recovered event ingestion.",
+    "Ships a public Integration SDK and Session Bridge extension for cross-session search, recall, proposals, and delegated work."
+  ],
+  "status": "active"
+}
