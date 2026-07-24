@@ -1,0 +1,23 @@
+{
+  "name": "plasma-ai/fractal",
+  "url": "https://github.com/plasma-ai/fractal",
+  "summary": "Hierarchical runtime for Codex and four peer coding-agent CLIs, with recursive delegation, per-node Git worktrees, configurable limits, and a live TUI for monitoring and steering.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "orchestration",
+    "multi-agent"
+  ],
+  "signals": [
+    "recursive-delegation",
+    "worktrees",
+    "runtime-limits",
+    "tui"
+  ],
+  "evidence": [
+    "Runs each autonomous node as an iterative agent loop in its own tmux session and Git worktree, persists execution state in SQLite, and enforces depth, child, descendant, time, and cost limits across the node tree.",
+    "Ships a Codex plugin and native `codex exec --json` backend with per-node `CODEX_HOME`, model and reasoning configuration, event and cost parsing, preflight checks, and dedicated backend tests."
+  ],
+  "status": "active"
+}
