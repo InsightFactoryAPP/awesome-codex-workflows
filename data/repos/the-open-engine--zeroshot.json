@@ -1,0 +1,27 @@
+{
+  "name": "the-open-engine/zeroshot",
+  "url": "https://github.com/the-open-engine/zeroshot",
+  "summary": "Cross-agent executor-verifier engine with Codex provider support that sizes workflows by task complexity, hands implementations to fresh validators without the executor's context, feeds reproducible failures into another iteration, and persists resumable runs in a crash-safe SQLite ledger.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "multi-agent",
+    "verification"
+  ],
+  "signals": [
+    "executor-verifier-loop",
+    "acceptance-criteria",
+    "independent-validation",
+    "quality-gates",
+    "worktree-isolation",
+    "durable-ledger"
+  ],
+  "evidence": [
+    "A conductor classifies task complexity and routes work through single-worker, worker-validator, planner-worker-validator, or staged critical-validation workflows.",
+    "Standard and critical workflows create stable acceptance-criterion IDs with explicit verification steps and priorities, then use read-only requirements, code, security, and test validators according to task risk.",
+    "Rejected validation results trigger another worker iteration, while PR handoff requires validator consensus and rejects configured quality-gate evidence that is missing, failing, unavailable, or stale.",
+    "Codex is a tested provider across the shared agent runtime, with dedicated command construction, structured-output parsing, session resume, model-level settings, and support for running the principal workflow roles."
+  ],
+  "status": "active"
+}
