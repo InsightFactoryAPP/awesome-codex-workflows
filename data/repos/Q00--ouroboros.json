@@ -1,0 +1,29 @@
+{
+  "name": "Q00/ouroboros",
+  "url": "https://github.com/Q00/ouroboros",
+  "summary": "Specification-first workflow runtime for Codex and other coding agents that turns ambiguity-scored Socratic interviews into immutable Seeds, then decomposes their acceptance criteria and evaluates execution with mechanical checks, semantic review, and optional multi-model consensus over event-sourced, resumable state.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "workflow-runtime",
+    "multi-agent",
+    "codex-plugin"
+  ],
+  "signals": [
+    "socratic-interview",
+    "seed-contracts",
+    "acceptance-criteria",
+    "parallel-execution",
+    "semantic-evaluation",
+    "evidence-gates",
+    "durable-state"
+  ],
+  "evidence": [
+    "The `ooo auto` workflow interviews the user, generates a Seed, and applies a readiness grade before handing the Seed to a coding-agent runtime.",
+    "Seeds preserve goals, constraints, ontology, and acceptance criteria in a frozen schema; criteria can carry stable semantic keys, verification commands, expected artifacts, and output assertions.",
+    "The default execution harness decomposes acceptance criteria for parallel execution, grounds completion claims in runtime events and workspace artifacts, and routes failed verification through retry or escalation paths.",
+    "Post-execution evaluation combines mechanical checks with semantic assessment of acceptance-criterion compliance, goal alignment, drift, and reward-hacking risk, with multi-model consensus available for triggered cases.",
+    "The project ships dedicated Codex setup, skills, rules, MCP integration, runtime handling, and session-resume support."
+  ],
+  "status": "active"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "EveryInc/compound-engineering-plugin",
+  "url": "https://github.com/EveryInc/compound-engineering-plugin",
+  "summary": "Compound-engineering plugin for Codex and other coding agents that traces stable requirement IDs through implementation units, requires per-unit verification evidence, applies eligible review fixes in `/lfg`, and writes solved problems to `docs/solutions/` as grounding for later planning.",
+  "codex_relation": "primary",
+  "category": "Codex Workflow Frameworks",
+  "tags": [
+    "spec-driven",
+    "code-review",
+    "knowledge-compounding",
+    "multi-agent"
+  ],
+  "signals": [
+    "unified-plan-contract",
+    "requirements-traceability",
+    "verification-contract",
+    "review-fix-loop",
+    "persistent-learnings"
+  ],
+  "evidence": [
+    "Ships a native Codex plugin manifest and self-contained Codex App and CLI installation path, with Codex-specific invocation, goal-mode, conversion, and development-install behavior covered by repository tests.",
+    "Uses one readiness-based plan artifact whose stable requirement, acceptance-example, technical-decision, and implementation-unit IDs carry product intent into implementation packets.",
+    "Implementation-ready plans require a Product Contract, Planning Contract, independently executable implementation units, a repository-specific Verification Contract, and global and per-unit Definition of Done criteria.",
+    "The implementation loop chooses and records evidence per behavior-bearing unit, checks integration effects beyond unit tests, and blocks completion when verification evidence or a deliberate replacement-verification exception is missing.",
+    "The autonomous lfg pipeline requires a reviewed plan before work, routes review findings through verified fixes or durable residual records, runs browser checks when applicable, and watches PR feedback and CI before completing.",
+    "Solved problems are written to the project learning corpus and reused as grounding by later brainstorming and planning cycles."
+  ],
+  "status": "active"
+}
