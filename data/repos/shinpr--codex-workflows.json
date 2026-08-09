@@ -1,7 +1,7 @@
 {
   "name": "shinpr/codex-workflows",
   "url": "https://github.com/shinpr/codex-workflows",
-  "summary": "Codex workflows organized around user-value slices so features get designed, tested, and integrated earlier instead of breaking at the end; each slice is grounded in design docs, test skeletons, TDD, and quality gates.",
+  "summary": "Keeps product changes within the approved outcome by recording user-visible contracts and exclusions before design and carrying them through handoffs, so technical findings do not automatically expand the product scope.",
   "codex_relation": "primary",
   "category": "Codex Workflow Frameworks",
   "tags": [
