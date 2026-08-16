@@ -1,0 +1,23 @@
+{
+  "name": "vostride/agent-qa",
+  "url": "https://github.com/vostride/agent-qa",
+  "summary": "Application-QA workflow that connects natural-language test authoring, run evidence, failure triage, and scoped debug/fix through Agent Skills, a CLI, and MCP.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "application-testing",
+    "qa"
+  ],
+  "signals": [
+    "mcp",
+    "skills",
+    "persistent-memory",
+    "quality-gates"
+  ],
+  "evidence": [
+    "The README documents MCP and Agent Skills for coding agents and supports Codex subscription authentication.",
+    "Three bundled skills implement test authoring, evidence-backed result triage, and scoped debug/fix workflows.",
+    "The MCP interface exposes test definitions, run state, logs, artifacts, and failure classification to coding agents."
+  ],
+  "status": "active"
+}

@@ -91,6 +91,7 @@ This section covers adjacent projects rather than Codex workflow frameworks: use
 - [sendbird/cc-plugin-codex](https://github.com/sendbird/cc-plugin-codex) - Claude Code bridge for Codex that runs tracked review jobs, rescue tasks, and blocking review gates, with structured ALLOW/BLOCK decisions and worktree-aware review isolation.
 - [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) - Deterministic Python orchestrator for many CLI coding agents that isolates runs in Git worktrees, enforces janitor verification and quality gates before merge, and includes a Codex CLI adapter.
 - [the-open-engine/zeroshot](https://github.com/the-open-engine/zeroshot) - Cross-agent executor-verifier engine with Codex provider support that sizes workflows by task complexity, hands implementations to fresh validators without the executor's context, feeds reproducible failures into another iteration, and persists resumable runs in a crash-safe SQLite ledger.
+- [vostride/agent-qa](https://github.com/vostride/agent-qa) - Application-QA workflow that connects natural-language test authoring, run evidence, failure triage, and scoped debug/fix through Agent Skills, a CLI, and MCP.
 
 <!-- GENERATED:REPO-LIST:END -->
 
