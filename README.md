@@ -2,33 +2,24 @@
 
 ![Awesome Codex Workflows banner](assets/awesome-codex-workflows-banner.jpg)
 
-Curated repositories for building and running real development workflows with Codex.
+Curated repositories for building and running development workflows with OpenAI Codex.
 
-The focus is not on Codex-related tools in general, but on repositories where the workflow is the point: planning, orchestration, subagents, staged execution, review loops, quality gates, worktrees, or the infrastructure that makes those workflows work in practice.
+This is a selective list rather than a general directory of Codex tools. It focuses on systems where planning, execution, review, or handoff is visible in code, configuration, or runtime behavior. The list also includes infrastructure built to support those workflows. Prompt packs, generic tool collections, and simple wrappers are generally left out.
 
-This list is intentionally opinionated. It favors repositories that make their workflow visible in code, config, or runtime behavior. If a project is interesting but still feels like a loose prompt pack, a generic tool collection, or a thin bridge, it is usually left out.
+Start with **Codex Workflow Frameworks** for workflows that cover planning through handoff. If you already have a workflow, see **Workflow Infrastructure & Design** for tools to run, secure, or inspect it.
 
 ## Contents
 
-- [Inclusion Notes](#inclusion-notes)
 - [Foundations & Standards](#foundations--standards)
 - [Codex Workflow Frameworks](#codex-workflow-frameworks)
 - [Workflow Infrastructure & Design](#workflow-infrastructure--design)
 - [Cross-Agent References](#cross-agent-references)
 
-## Inclusion Notes
-
-- Codex should be a first-class target, not just an optional backend.
-- The repository should show an actual workflow model, not only isolated prompts or skills.
-- Reusable artifacts should exist, such as commands, agents, skills, templates, install scripts, runtimes, or other concrete workflow assets.
-- Workflow infrastructure and workflow-design tools are in scope when they materially help people build or operate Codex workflows.
-- Cross-agent systems belong here only as references, when they are useful for comparison but are not fundamentally Codex-first.
-
 <!-- GENERATED:REPO-LIST:START -->
 
 ## Foundations & Standards
 
-Official building blocks appear here alongside ecosystem standards that help make Codex workflow repos interoperable.
+Core Codex projects and shared standards that other workflow repositories build on.
 
 - [OpenAI/codex](https://github.com/openai/codex) - Official Codex repository, providing the execution runtime that Codex-native workflow layers and orchestration tools build on.
 - [OpenAI/skills](https://github.com/openai/skills) - Official skill catalog for Codex, showing how reusable instructions, scripts, and resources are packaged into workflow building blocks.
@@ -37,7 +28,7 @@ Official building blocks appear here alongside ecosystem standards that help mak
 
 ## Codex Workflow Frameworks
 
-These are the repositories where the workflow itself is the product: planning, execution, review, and handoff are built into the system rather than added on around it.
+Reusable Codex-first systems that define how development work moves from planning through completion.
 
 - [am-will/swarms](https://github.com/am-will/swarms) - Dependency-aware workflow skills for Codex and Claude that make parallel execution safer through explicit `depends_on` plans, wave execution, and TDD-oriented validation.
 - [code-yeongyu/lazycodex](https://github.com/code-yeongyu/lazycodex) - OMO's Codex Light workflow harness built around `ulw-loop`, combining durable goal state, ledger-backed progress tracking, evidence-based completion checks, goal reconciliation, and final quality-gate validation.
@@ -60,7 +51,7 @@ These are the repositories where the workflow itself is the product: planning, e
 
 ## Workflow Infrastructure & Design
 
-These repositories help people design, support, or operate Codex workflows, even when the workflow itself lives elsewhere.
+Tools for designing, running, securing, and inspecting Codex workflows, even when the workflow itself lives elsewhere.
 
 - [basilisk-labs/agentplane](https://github.com/basilisk-labs/agentplane) - Git-native harness engineering layer for Codex and other coding agents, organizing work around task contracts, approved plans, verification records, and Agent Change Records tracked directly in Git.
 - [berabuddies/agentflow](https://github.com/berabuddies/agentflow) - Graph-based orchestration runtime for Codex, Claude, and Kimi that treats workflows as dependency graphs, enabling fanout, merge, iterative loops, worktrees, and remote execution.
@@ -78,7 +69,7 @@ These repositories help people design, support, or operate Codex workflows, even
 
 ## Cross-Agent References
 
-This section covers adjacent projects rather than Codex workflow frameworks: useful workflow patterns, Codex integration approaches, and operational ideas from nearby agent systems.
+Cross-agent systems that are not Codex-first but let Codex participate directly in their workflows.
 
 - [AgentWrapper/agent-orchestrator](https://github.com/AgentWrapper/agent-orchestrator) - Plugin-based orchestration control plane that isolates each coding task in its own worktree and routes CI or review reactions back through configurable runtime, tracker, and notifier slots.
 - [awslabs/cli-agent-orchestrator](https://github.com/awslabs/cli-agent-orchestrator) - Hierarchical tmux-based multi-agent orchestrator that coordinates supervisor and worker sessions across agent CLIs, with dedicated Codex support in a broader cross-CLI system.
@@ -97,12 +88,4 @@ This section covers adjacent projects rather than Codex workflow frameworks: use
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-Before proposing an addition, check that:
-
-- Codex is a first-class workflow target, not just an optional backend.
-- The repository shows an actual workflow or orchestration model.
-- The project is public, accessible, and documented enough to evaluate.
-
-For now, scope decisions should favor clarity over coverage.
+To suggest a project or update an existing entry, see [CONTRIBUTING.md](CONTRIBUTING.md).
