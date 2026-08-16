@@ -9,19 +9,19 @@ export function renderGeneratedRepoSection(root = process.cwd()) {
   const descriptions = new Map([
     [
       "Foundations & Standards",
-      "Official building blocks appear here alongside ecosystem standards that help make Codex workflow repos interoperable."
+      "Core Codex projects and shared standards that other workflow repositories build on."
     ],
     [
       "Codex Workflow Frameworks",
-      "These are the repositories where the workflow itself is the product: planning, execution, review, and handoff are built into the system rather than added on around it."
+      "Reusable Codex-first systems that define how development work moves from planning through completion."
     ],
     [
       "Workflow Infrastructure & Design",
-      "These repositories help people design, support, or operate Codex workflows, even when the workflow itself lives elsewhere."
+      "Tools for designing, running, securing, and inspecting Codex workflows, even when the workflow itself lives elsewhere."
     ],
     [
       "Cross-Agent References",
-      "This section covers adjacent projects rather than Codex workflow frameworks: useful workflow patterns, Codex integration approaches, and operational ideas from nearby agent systems."
+      "Cross-agent systems that are not Codex-first but let Codex participate directly in their workflows."
     ]
   ]);
 

@@ -6,12 +6,18 @@ The goal is not broad coverage. The goal is a clear list with a stable scope.
 
 ## Scope
 
-An addition is a good fit when all of the following are true:
+All additions should:
 
-- Codex or Codex CLI is an explicit primary target.
-- The repository exposes an actual workflow or orchestration model.
-- The repository includes reusable artifacts such as commands, agents, skills, templates, install scripts, or CLI tooling.
-- The project is public and documented enough to evaluate.
+- be public and accessible;
+- provide an English-language README or a clearly linked English overview with enough information to evaluate the project; and
+- be presented by their maintainers as ready for others to use, rather than as experiments or proofs of concept.
+
+A repository should fit one of these categories:
+
+- **Foundations & Standards**: Foundations or shared standards that support Codex workflows.
+- **Codex Workflow Frameworks**: Reusable workflows where Codex is a first-class target.
+- **Workflow Infrastructure & Design**: Reusable infrastructure for building or operating Codex workflows.
+- **Cross-Agent References**: Distinctive cross-agent workflows that Codex can participate in directly.
 
 ## Usually Out of Scope
 
