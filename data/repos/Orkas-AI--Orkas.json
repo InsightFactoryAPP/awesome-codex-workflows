@@ -1,0 +1,23 @@
+{
+  "name": "Orkas-AI/Orkas",
+  "url": "https://github.com/Orkas-AI/Orkas",
+  "summary": "Local-first desktop AI workforce where a Commander routes work from one chat to specialists and persistent Codex or peer CLI sessions, either handing a task over directly or bringing the result back to coordinate what happens next.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cross-agent",
+    "desktop-app",
+    "multi-agent"
+  ],
+  "signals": [
+    "commander-routing",
+    "persistent-sessions",
+    "direct-handoff"
+  ],
+  "evidence": [
+    "Uses a Commander-in-the-loop routing model that handles light outcomes directly, returns non-terminal agent results for continued coordination, and lets one named agent take over final delivery without a redundant Commander summary.",
+    "Integrates Codex through a dedicated app-server backend with persistent thread resume, bounded shared-conversation context, direct user routing, terminal handoff, and active-turn steering.",
+    "Carries delegated work through a shared conversation and task board with explicit ownership, cancellation, recovery, and terminal-result handling rather than presenting external CLIs as disconnected terminal processes."
+  ],
+  "status": "active"
+}
