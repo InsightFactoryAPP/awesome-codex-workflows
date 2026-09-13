@@ -1,0 +1,27 @@
+{
+  "name": "yylo-dev/yylo",
+  "url": "https://github.com/yylo-dev/yylo",
+  "summary": "Command-line orchestrator for coding agents that routes typed task work through dedicated Git worktrees and guarded merges, with receipt-backed runs and installable agent skills.",
+  "codex_relation": "appendix",
+  "category": "Cross-Agent References",
+  "tags": [
+    "cli",
+    "cross-agent",
+    "multi-agent",
+    "orchestration"
+  ],
+  "signals": [
+    "worktrees",
+    "quality-gates",
+    "receipts",
+    "skills",
+    "subagents"
+  ],
+  "evidence": [
+    "README describes YYLO as a command-line orchestrator for coding agents, repeatable workflows, and receipt-backed repository changes, aimed at developers who want a quick agent loop and operators who need typed task, validation, merge, and release-readiness boundaries.",
+    "Model alias table targets Codex models (`openai-codex/gpt-5.6-luna`, `openai-codex/gpt-6-astra`) alongside Anthropic models, and notes that alias mappings are subagent-specific, for example Pi and Codex do not share the same `:mini` mapping.",
+    "Typed task lifecycle: `task start` freezes the protected target SHA and creates a dedicated branch/worktree; `task preflight` is a read-only closure-defect check before `task finish` queues the committed tip; `merge land` selects one immutable task source, composes in a private detached candidate, and uses Git expected-old ref protection.",
+    "Merge itself launches no models, chooses no reviewers, and schedules no suites; `watch exec` emits machine-readable run receipts with state, exit code, and log bytes; the seven shipped agent skills install into `.agents/skills`, `.claude/skills`, and `.pi/skills`."
+  ],
+  "status": "active"
+}

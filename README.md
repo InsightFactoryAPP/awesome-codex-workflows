@@ -83,6 +83,7 @@ Cross-agent systems that are not Codex-first but let Codex participate directly 
 - [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) - Deterministic Python orchestrator for many CLI coding agents that isolates runs in Git worktrees, enforces janitor verification and quality gates before merge, and includes a Codex CLI adapter.
 - [the-open-engine/zeroshot](https://github.com/the-open-engine/zeroshot) - Cross-agent executor-verifier engine with Codex provider support that sizes workflows by task complexity, hands implementations to fresh validators without the executor's context, feeds reproducible failures into another iteration, and persists resumable runs in a crash-safe SQLite ledger.
 - [vostride/agent-qa](https://github.com/vostride/agent-qa) - Application-QA workflow that connects natural-language test authoring, run evidence, failure triage, and scoped debug/fix through Agent Skills, a CLI, and MCP.
+- [yylo-dev/yylo](https://github.com/yylo-dev/yylo) - Command-line orchestrator for coding agents that routes typed task work through dedicated Git worktrees and guarded merges, with receipt-backed runs and installable agent skills.
 
 <!-- GENERATED:REPO-LIST:END -->
 
