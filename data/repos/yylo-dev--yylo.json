@@ -1,12 +1,11 @@
 {
   "name": "yylo-dev/yylo",
   "url": "https://github.com/yylo-dev/yylo",
-  "summary": "Command-line orchestrator for coding agents that routes typed task work through dedicated Git worktrees and guarded merges, with receipt-backed runs and installable agent skills.",
-  "codex_relation": "appendix",
-  "category": "Cross-Agent References",
+  "summary": "Git-native control plane for Codex and other coding agents that separates agent execution from integration authority, using dedicated worktrees, task leases, receipts, and guarded ref updates to keep parallel work from overwriting changed state.",
+  "codex_relation": "adjacent",
+  "category": "Workflow Infrastructure & Design",
   "tags": [
     "cli",
-    "cross-agent",
     "multi-agent",
     "orchestration"
   ],

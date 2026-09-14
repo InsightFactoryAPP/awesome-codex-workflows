@@ -65,6 +65,7 @@ Tools for designing, running, securing, and inspecting Codex workflows, even whe
 - [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) - File-backed planning infrastructure for Codex and other agent CLIs, combining lifecycle hooks, isolated planning sessions, plan attestation, run ledgers, and optional completion gates tied to plan state.
 - [strongdm/leash](https://github.com/strongdm/leash) - Runtime containment and policy layer for AI coding agents that makes Codex workflows safer by wrapping agents in monitored containers and enforcing Cedar policies in real time.
 - [xintaofei/codeg](https://github.com/xintaofei/codeg) - Shared coding workspace for multi-agent teams, tying together session aggregation, worktrees, MCP management, browser access, and chat-channel control across desktop and server surfaces.
+- [yylo-dev/yylo](https://github.com/yylo-dev/yylo) - Git-native control plane for Codex and other coding agents that separates agent execution from integration authority, using dedicated worktrees, task leases, receipts, and guarded ref updates to keep parallel work from overwriting changed state.
 
 ## Cross-Agent References
 
@@ -83,7 +84,6 @@ Cross-agent systems that are not Codex-first but let Codex participate directly 
 - [sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) - Deterministic Python orchestrator for many CLI coding agents that isolates runs in Git worktrees, enforces janitor verification and quality gates before merge, and includes a Codex CLI adapter.
 - [the-open-engine/zeroshot](https://github.com/the-open-engine/zeroshot) - Cross-agent executor-verifier engine with Codex provider support that sizes workflows by task complexity, hands implementations to fresh validators without the executor's context, feeds reproducible failures into another iteration, and persists resumable runs in a crash-safe SQLite ledger.
 - [vostride/agent-qa](https://github.com/vostride/agent-qa) - Application-QA workflow that connects natural-language test authoring, run evidence, failure triage, and scoped debug/fix through Agent Skills, a CLI, and MCP.
-- [yylo-dev/yylo](https://github.com/yylo-dev/yylo) - Command-line orchestrator for coding agents that routes typed task work through dedicated Git worktrees and guarded merges, with receipt-backed runs and installable agent skills.
 
 <!-- GENERATED:REPO-LIST:END -->
 
